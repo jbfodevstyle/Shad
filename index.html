@@ -5,6 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirect Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .popup-content {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
     <script>
         let count = 0;
 
@@ -29,9 +58,9 @@
 </head>
 
 <body>
-    <div style="text-align: center; margin-top: 200px;">
-        <h1>Click button below (close out 3 times)</h1>
-        <button onclick="redirect()">Click Me</button>
+    <div class="popup-content">
+        <h1>Click the button below (close out 3 times)</h1>
+        <button class="button" onclick="redirect()">Click Me</button>
     </div>
 </body>
 
