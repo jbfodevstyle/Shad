@@ -39,19 +39,14 @@
 
         function redirect() {
             count++;
-            let popup;
             if (count === 1) {
-                popup = window.open("https://www.youtube.com/@Imaburntdorito", "_blank");
+                window.open("https://www.youtube.com/@Imaburntdorito", "_blank");
             } else if (count === 2) {
-                popup = window.open("https://sites.google.com/view/meximath/", "_blank");
+                window.open("https://sites.google.com/view/meximath/", "_blank");
             } else if (count === 3) {
-                popup = window.open("https://discloudbot.com/", "_blank");
+                window.open("https://discloudbot.com/", "_blank");
             } else {
-                popup = window.open("https://github.com/jbfodevstyle/Shadow", "_blank");
-            }
-
-            if (count >= 3) {
-                popup.close();
+                window.location.href = "https://github.com/jbfodevstyle/Shadow";
             }
         }
     </script>
