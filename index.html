@@ -10,14 +10,19 @@
 
         function redirect() {
             count++;
+            let popup;
             if (count === 1) {
-                window.location.href = "https://www.youtube.com/@Imaburntdorito";
+                popup = window.open("https://www.youtube.com/@Imaburntdorito", "_blank");
             } else if (count === 2) {
-                window.location.href = "https://sites.google.com/view/meximath/";
+                popup = window.open("https://sites.google.com/view/meximath/", "_blank");
             } else if (count === 3) {
-                window.location.href = "https://discloudbot.com/";
+                popup = window.open("https://discloudbot.com/", "_blank");
             } else {
-                window.location.href = "https://github.com/jbfodevstyle/Shadow";
+                popup = window.open("https://github.com/jbfodevstyle/Shadow", "_blank");
+            }
+
+            if (count >= 3) {
+                popup.close();
             }
         }
     </script>
