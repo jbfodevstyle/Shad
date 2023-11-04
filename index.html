@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect Page</title>
+    <script>
+        let count = 0;
+
+        function redirect() {
+            count++;
+            if (count === 1) {
+                window.location.href = "https://www.youtube.com/@Imaburntdorito";
+            } else if (count === 2) {
+                window.location.href = "https://sites.google.com/view/meximath/";
+            } else if (count === 3) {
+                window.location.href = "https://discloudbot.com/";
+            } else {
+                window.location.href = "https://github.com/jbfodevstyle/Shadow";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div style="text-align: center; margin-top: 200px;">
+        <h1>Click button below (close out 3 times)</h1>
+        <button onclick="redirect()">Click Me</button>
+    </div>
+</body>
+
+</html>
